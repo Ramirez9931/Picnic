@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cita Romántica - Picnic</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> <!-- Tipografía -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
+    
     <!-- Pregunta inicial -->
     <div id="pregunta">
       <p>¿Quieres tener una cita romántica conmigo?</p>
@@ -16,13 +17,13 @@
       <button id="btn-no">No</button>
     </div>
 
-    <!-- Carta que se muestra después de hacer clic en "Sí" -->
+    <!-- Carta -->
     <div id="carta" class="hidden">
       <p>Póngase bonita como siempre mi princesa, te paso a recoger la fecha que puedas de marzo a la 1 de la tarde amor.</p>
       <button id="ver-detalles">Ver detalles</button>
     </div>
 
-    <!-- Detalles del picnic -->
+    <!-- Detalles -->
     <div id="detalles" class="hidden">
       <h3>Colores para el picnic:</h3>
       <div class="colores">
@@ -36,6 +37,7 @@
         <div class="corazon" style="background-color: #ffffff;" onclick="mostrarFrase('Tu amor ilumina mi vida 🤍')"></div>
         <div class="corazon" style="background-color: #c0c0c0;" onclick="mostrarFrase('Te adoro con todo mi ser 🩶')"></div>
       </div>
+
       <h4>Detalles del picnic:</h4>
       <p>Debemos llevar algo al menos algo de comer: Bebida, postre y snack en estos colores.</p>
     </div>
@@ -45,6 +47,10 @@
       <p id="frase"></p>
     </div>
   </div>
+
+  <!-- Pantalla NECIA -->
+  <div id="pantalla-necia" class="hidden"></div>
+
   <script src="script.js"></script>
 </body>
 </html>
